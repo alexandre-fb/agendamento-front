@@ -2,11 +2,11 @@
   <div class="w-full h-screen flex items-center justify-center">
     <div class="w-full max-w-[330px]">
       <!-- header -->
-      <HeaderAuthCard />
+      <!-- <HeaderAuthCard /> -->
 
       <!-- body -->
       <div
-        class="flex flex-col gap-8 bg-primary min-h-[370px] rounded-b-15 p-6 text-center"
+        class="flex flex-col gap-8 bg-primary min-h-[370px] rounded-15 p-6 text-center shadow-lg border-gray-100 border"
       >
         <CardAuthDescription
           title="Bem-vindo"
@@ -77,12 +77,12 @@
     </div>
 
     <!-- modal -->
-    <ModalComponentVideo
+    <!-- <ModalComponentVideo
       :visible="showModal"
       :videoLink="loginData.video_intro"
       buttonText="Pular"
       @close="goHome"
-    />
+    /> -->
   </div>
 </template>
 
@@ -110,7 +110,6 @@ const router = useRouter();
 const userStore = useUserStore();
 const pagesStore = usePagesStore();
 const loading = ref(false);
-const showModal = ref(false);
 const formData = ref({
   email: "",
   password: "",
@@ -159,7 +158,7 @@ const handleLogin = async (form) => {
 
         console.log('response login',response)
 
-        if (response.dados.token) {
+        if (response.data.token) {
           ElMessage({
             showClose: true,
             message: "Login realizado com sucesso!",
@@ -167,11 +166,12 @@ const handleLogin = async (form) => {
             duration: 1800,
           });
 
-          showModal.value = true;
+          // showModal.value = true;
+          goHome();
         }
 
         setGlobalUserData(response);
-        fetchBannersPages(response.dados.token);
+        // fetchBannersPages(response.dados.token);
       } catch (error) {
         console.log("error", error);
         ElMessage({
@@ -192,36 +192,36 @@ const handleLogin = async (form) => {
   });
 };
 
-const fetchBannersPages = async (token) => {
-  try {
-    const completeToken = "Bearer " + token
-    const apiUrl = `${baseApiUrl}/pagina`;
-    const response = await $fetch(apiUrl, {
-      method: "GET",
-      headers: {
-        Authorization: completeToken,
-      },
-    });
+// const fetchBannersPages = async (token) => {
+//   try {
+//     const completeToken = "Bearer " + token
+//     const apiUrl = `${baseApiUrl}/pagina`;
+//     const response = await $fetch(apiUrl, {
+//       method: "GET",
+//       headers: {
+//         Authorization: completeToken,
+//       },
+//     });
 
-    setBannersPagesGlobalData(response[0]);
-  } catch (error) {
-    console.log("error fetchBanners", error);
-  }
-};
+//     setBannersPagesGlobalData(response[0]);
+//   } catch (error) {
+//     console.log("error fetchBanners", error);
+//   }
+// };
 
 const setGlobalUserData = (response) => {
-  userStore.setToken(response.dados.token);
-  userStore.setUser(response.dados.usuario);
+  userStore.setToken(response.data.token);
+  // userStore.setUser(response.data.usuario);
   userStore.setIsLogged(true);
 };
 
-const setBannersPagesGlobalData = (bannersData) => {
-  pagesStore.setBanners(bannersData);
-};
+// const setBannersPagesGlobalData = (bannersData) => {
+//   pagesStore.setBanners(bannersData);
+// };
 
 const goHome = () => {
-  showModal.value = false;
-  router.push({ path: "/" });
+  // showModal.value = false;
+  router.push({ path: "/agendamento" });
 };
 </script>
 

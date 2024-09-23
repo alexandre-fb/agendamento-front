@@ -2,18 +2,6 @@
 export default {
   content: [],
   theme: {
-    colors: {
-      //Colors
-      'primary': '#FFFFFF',
-      'secondary': '#F5821F',
-      'tertiary': '#424242',
-      'quaternary': '#6A6B70',
-      'error': '#FF0000',
-      'correct': '#00A551',
-      'primary-text': '#FFFFFF',
-      'secondary-text': '#424242',
-      'tertiary-text': '#F5821F',
-    },
     fontWeight: {
       normal: '400',
       medium: '500',
@@ -29,6 +17,18 @@ export default {
       '2xlg': '1.563rem', // -> 25px
     },
     extend: {
+      colors: {
+        //Colors
+        'primary': '#FFFFFF',
+        'secondary': '#F5821F',
+        'tertiary': '#424242',
+        'quaternary': '#6A6B70',
+        'error': '#FF0000',
+        'correct': '#00A551',
+        'primary-text': '#FFFFFF',
+        'secondary-text': '#424242',
+        'tertiary-text': '#F5821F',
+      },
       maxWidth: {
         'container': '81.25rem', // -> 1300px
       },

@@ -44,8 +44,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      baseApiUrl: process.env.BASE_API_URL,
-      apiToken: "Bearer " + process.env.API_TOKEN,
+      baseApiUrl: 'http://localhost/criasol-backend/public/api',
     },
   },
 });
