@@ -1,0 +1,45 @@
+{
+  "conteudo_treinamento": {
+    "conteudo": [
+      {
+        "id_treinamento": 22,
+        "tipo": "video",
+        "titulo": "Titulo do vídeo",
+        "descricao": "Descrição do vídeo",
+        "url": "https://sicredi.planteste.com.br/videos/Sicredi_PI_sequence_transparent_intro.mp4"
+      },
+      {
+        "id_treinamento": 22,
+        "tipo": "imagens",
+        "titulo": "",
+        "descricao": "",
+        "imagens": [
+          {
+            "id": 1,
+            "img_desk": "https://picsum.photos/600/300?random=1",
+            "img_mobile": "https://picsum.photos/400/400?random=1",
+            "alt_imagem": "Alt da imagem"
+          },
+          {
+            "id": 1,
+            "img_desk": "https://picsum.photos/600/300?random=2",
+            "img_mobile": "https://picsum.photos/400/400?random=2",
+            "alt_imagem": "Alt da imagem"
+          },
+          {
+            "id": 1,
+            "img_desk": "https://picsum.photos/600/300?random=3",
+            "img_mobile": "https://picsum.photos/400/400?random=3",
+            "alt_imagem": "Alt da imagem"
+          },
+          {
+            "id": 1,
+            "img_desk": "https://picsum.photos/600/300?random=4",
+            "img_mobile": "https://picsum.photos/400/400?random=4",
+            "alt_imagem": "Alt da imagem"
+          }
+        ]
+      }
+    ]
+  }
+}

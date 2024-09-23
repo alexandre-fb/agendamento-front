@@ -1,0 +1,38 @@
+{
+    "imagem_banner": "https://amcor.planteste.com.br/storage/cenarios/J3sJoeJsxIIXdg3pT6pNao7RTxTsYHcPmcqYamBj.png",
+    "imagem_banner_mobile": "https://amcor.planteste.com.br/storage/cenarios/J3sJoeJsxIIXdg3pT6pNao7RTxTsYHcPmcqYamBj.png",
+    "alt_imagem_banner": "Alt da imagem", 
+    "titulo_pagina": "Notificacoes",
+    "notificacoes": [
+    {
+      "date": "07/12/2021",
+      "hour": "16:00",
+      "message": "Novo treinamento! Lorem ipsum factum."
+    },
+    {
+      "date": "07/12/2021",
+      "hour": "16:00",
+      "message": "Novo treinamento! Lorem ipsum factum."
+    },
+    {
+      "date": "07/12/2021",
+      "hour": "16:00",
+      "message": "Novo treinamento! Lorem ipsum factum."
+    },
+    {
+      "date": "07/12/2021",
+      "hour": "16:00",
+      "message": "Novo treinamento! Lorem ipsum factum."
+    },
+    {
+      "date": "07/12/2021",
+      "hour": "16:00",
+      "message": "Novo treinamento! Lorem ipsum factum."
+    },
+    {
+      "date": "07/12/2021",
+      "hour": "16:00",
+      "message": "Novo treinamento! Lorem ipsum factum."
+    }
+  ]
+}

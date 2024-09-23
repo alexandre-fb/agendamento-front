@@ -1,0 +1,227 @@
+{
+  "perguntas": [
+    {
+      "treinamento_id": 3,
+      "tipo": "sim-nao",
+      "id": 12,
+      "titulo": "Em caso de princípio de incêndio, o que devo fazer?",
+      "ativo": 1,
+      "created_at": "2023-11-06T17:34:11.000000Z",
+      "updated_at": "2023-11-28T16:41:26.000000Z",
+      "respostas": null
+    },
+    {
+      "tipo": "multipla-escolha-texto",
+      "id": 13,
+      "titulo": "Em caso de princípio de incêndio, como apagar o fogo?",
+      "treinamento_id": 3,
+      "ativo": 1,
+      "created_at": "2023-11-06T18:22:23.000000Z",
+      "updated_at": "2023-11-28T16:43:15.000000Z",
+      "respostas": [
+        {
+          "id": 337,
+          "texto": "Aguardar o brigadista realizar o combate. ",
+          "treinamento_pergunta_id": 13,
+          "ativo": 1,
+          "created_at": "2023-11-28T16:43:15.000000Z",
+          "updated_at": "2023-11-28T16:43:15.000000Z"
+        },
+        {
+          "id": 338,
+          "texto": "Tomar iniciativa e combater o incêndio.",
+          "treinamento_pergunta_id": 13,
+          "ativo": 1,
+          "created_at": "2023-11-28T16:43:15.000000Z",
+          "updated_at": "2023-11-28T16:43:15.000000Z"
+        },
+        {
+          "id": 339,
+          "texto": "Acionar o corpo de bombeiros externo (193).",
+          "treinamento_pergunta_id": 13,
+          "ativo": 1,
+          "created_at": "2023-11-28T16:43:15.000000Z",
+          "updated_at": "2023-11-28T16:43:15.000000Z"
+        }
+      ]
+    },
+    {
+      "tipo": "checkbox",
+      "id": 14,
+      "titulo": "Caso toque o alarme de evacuação, o que devo fazer?",
+      "treinamento_id": 3,
+      "ativo": 1,
+      "created_at": "2023-11-06T18:26:06.000000Z",
+      "updated_at": "2023-11-06T18:26:06.000000Z",
+      "respostas": [
+        {
+          "id": 328,
+          "texto": "Concluir as atividades ao qual estou executando, pegar minhas coisas pessoais e me dirigir  tranquilamente ao ponto de encontro.",
+          "treinamento_pergunta_id": 14,
+          "ativo": 1,
+          "created_at": "2023-11-13T20:22:12.000000Z",
+          "updated_at": "2023-11-13T20:22:12.000000Z"
+        },
+        {
+          "id": 329,
+          "texto": "Parar imediatamente o que estou executando e me dirigir ao ponto de encontro.",
+          "treinamento_pergunta_id": 14,
+          "ativo": 1,
+          "created_at": "2023-11-13T20:22:12.000000Z",
+          "updated_at": "2023-11-13T20:22:12.000000Z"
+        },
+        {
+          "id": 330,
+          "texto": "Continuar com minhas atividades até que um brigadista solicite a minha ida ao ponto de encontro.",
+          "treinamento_pergunta_id": 14,
+          "ativo": 1,
+          "created_at": "2023-11-13T20:22:12.000000Z",
+          "updated_at": "2023-11-13T20:22:12.000000Z"
+        }
+      ]
+    },
+    {
+      "tipo": "multipla-escolha-imagens",
+      "id": 15,
+      "titulo": "Durante o procedimento de evacuação de emergência, devo:",
+      "treinamento_id": 3,
+      "ativo": 1,
+      "created_at": "2023-11-06T18:27:59.000000Z",
+      "updated_at": "2023-11-06T18:27:59.000000Z",
+      "respostas": [
+        {
+          "id": 250,
+          "texto": "Aguardar na área externa da fábrica o controle da emergência, independente de ser um ponto de  encontro.",
+          "treinamento_pergunta_id": 15,
+          "imagem": "https://amcor.planteste.com.br/storage/dB19Bft7zcQZPTpYZuLRFeTiBPYKj9wu5CZ6RROM.png",
+          "imagem_alt": null,
+          "ativo": 1,
+          "created_at": "2023-11-13T16:54:41.000000Z",
+          "updated_at": "2023-11-13T16:54:41.000000Z"
+        },
+        {
+          "id": 251,
+          "texto": "Aguardar na área do café o controle da emergência, independente de ser um ponto de encontro.",
+          "treinamento_pergunta_id": 15,
+          "imagem": "https://amcor.planteste.com.br/storage/wdUbki7T69M1KjrgsPV0wqbuaF5FyuFzYV5xvMW0.png",
+          "imagem_alt": null,
+          "ativo": 1,
+          "created_at": "2023-11-13T16:54:41.000000Z",
+          "updated_at": "2023-11-13T16:54:41.000000Z"
+        },
+        {
+          "id": 252,
+          "texto": "Aguardar no ponto de encontro o controle da emergência e a liberação da brigada para retornar ao meu posto de trabalho.",
+          "treinamento_pergunta_id": 15,
+          "imagem": "https://amcor.planteste.com.br/storage/qkuw40WcxpUDYyQ7oaKofhPRgkORrD3tbS4h4Eol.png",
+          "imagem_alt": null,
+          "ativo": 1,
+          "created_at": "2023-11-13T16:54:41.000000Z",
+          "updated_at": "2023-11-13T16:54:41.000000Z"
+        },
+        {
+          "id": 253,
+          "texto": "Aguardar no ponto de encontro o controle da emergência e a liberação da brigada para retornar ao meu posto de trabalho.",
+          "treinamento_pergunta_id": 15,
+          "imagem": "https://amcor.planteste.com.br/storage/qkuw40WcxpUDYyQ7oaKofhPRgkORrD3tbS4h4Eol.png",
+          "imagem_alt": null,
+          "ativo": 1,
+          "created_at": "2023-11-13T16:54:41.000000Z",
+          "updated_at": "2023-11-13T16:54:41.000000Z"
+        }
+      ]
+    },
+    {
+      "tipo": "multipla-escolha-video",
+      "video_url": "https://www.youtube.com/embed/6CCTCeZ34Dk",
+      "id": 16,
+      "intro": null,
+      "titulo": "d) Durante o procedimento de evacuação de emergência, devo:",
+      "treinamento_id": 3,
+      "ativo": 1,
+      "created_at": "2023-11-06T18:27:59.000000Z",
+      "updated_at": "2023-11-06T18:27:59.000000Z",
+      "respostas": [
+        {
+          "id": 250,
+          "texto": "Aguardar na área externa da fábrica o controle da emergência, independente de ser um ponto de  encontro.",
+          "treinamento_pergunta_id": 15,
+          "ativo": 1,
+          "created_at": "2023-11-13T16:54:41.000000Z",
+          "updated_at": "2023-11-13T16:54:41.000000Z"
+        },
+        {
+          "id": 251,
+          "texto": "Aguardar na área do café o controle da emergência, independente de ser um ponto de encontro.",
+          "treinamento_pergunta_id": 15,
+          "ativo": 1,
+          "created_at": "2023-11-13T16:54:41.000000Z",
+          "updated_at": "2023-11-13T16:54:41.000000Z"
+        },
+        {
+          "id": 252,
+          "texto": "Aguardar no ponto de encontro o controle da emergência e a liberação da brigada para retornar ao meu posto de trabalho.",
+          "treinamento_pergunta_id": 15,
+          "ativo": 1,
+          "created_at": "2023-11-13T16:54:41.000000Z",
+          "updated_at": "2023-11-13T16:54:41.000000Z"
+        },
+        {
+          "id": 253,
+          "texto": "Aguardar no ponto de encontro o controle da emergência e a liberação da brigada para retornar ao meu posto de trabalho.",
+          "treinamento_pergunta_id": "15",
+          "imagem": "https://amcor.planteste.com.br/storage/qkuw40WcxpUDYyQ7oaKofhPRgkORrD3tbS4h4Eol.png",
+          "imagem_alt": null,
+          "ativo": 1,
+          "created_at": "2023-11-13T16:54:41.000000Z",
+          "updated_at": "2023-11-13T16:54:41.000000Z"
+        }
+      ]
+    },
+    {
+      "tipo": "multipla-escolha-audio",
+      "audio_url": "https://m4a-64.jango.com/29/58/97/2958971208738807650.m4a",
+      "id": 16,
+      "intro": null,
+      "titulo": "Durante o procedimento de evacuação de emergência, devo:",
+      "treinamento_id": 3,
+      "ativo": 1,
+      "created_at": "2023-11-06T18:27:59.000000Z",
+      "updated_at": "2023-11-06T18:27:59.000000Z",
+      "respostas": [
+        {
+          "id": 250,
+          "texto": "Aguardar na área externa da fábrica o controle da emergência, independente de ser um ponto de  encontro.",
+          "treinamento_pergunta_id": 15,
+          "ativo": 1,
+          "created_at": "2023-11-13T16:54:41.000000Z",
+          "updated_at": "2023-11-13T16:54:41.000000Z"
+        },
+        {
+          "id": 251,
+          "texto": "Aguardar na área do café o controle da emergência, independente de ser um ponto de encontro.",
+          "treinamento_pergunta_id": 15,
+          "ativo": 1,
+          "created_at": "2023-11-13T16:54:41.000000Z",
+          "updated_at": "2023-11-13T16:54:41.000000Z"
+        },
+        {
+          "id": 252,
+          "texto": "Aguardar no ponto de encontro o controle da emergência e a liberação da brigada para retornar ao meu posto de trabalho.",
+          "treinamento_pergunta_id": 15,
+          "ativo": 1,
+          "created_at": "2023-11-13T16:54:41.000000Z",
+          "updated_at": "2023-11-13T16:54:41.000000Z"
+        },
+        {
+          "id": 253,
+          "texto": "Aguardar no ponto de encontro o controle da emergência e a liberação da brigada para retornar ao meu posto de trabalho.",
+          "treinamento_pergunta_id": 15,
+          "ativo": 1,
+          "created_at": "2023-11-13T16:54:41.000000Z",
+          "updated_at": "2023-11-13T16:54:41.000000Z"
+        }
+      ]
+    }
+  ]
+}

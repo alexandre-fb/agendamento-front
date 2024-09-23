@@ -1,0 +1,19 @@
+{
+  "message": "Itens listados com sucesso.",
+  "itens": [
+    {
+      "id": 1,
+      "nome": "Princípio de incêndio",
+      "subcategorias": [
+        {
+          "id": 1,
+          "nome": "Subcategoria 1"
+        },
+        {
+          "id": 2,
+          "nome": "Subcategoria 2"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": 3,
+  "titulo": "Ao se deparar com um princípio de incêndio",
+  "slug": "ao-se-deparar-com-um-principio-de-incendio",
+  "categoria_id": "1",
+  "imagem": "https://amcor.planteste.com.br/storage/cenarios/J3sJoeJsxIIXdg3pT6pNao7RTxTsYHcPmcqYamBj.png",
+  "imagem_alt": null,
+  "descricao": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar vitae libero id imperdiet. Donec et tristique lectus, a scelerisque ligula. Vivamus sed viverra tortor. Pellentesque eleifend ipsum quis ipsum iaculis, ut vehicula libero ornare. Nam condimentum, magna eu ultricies fermentum, mi sem accumsan mi, quis semper leo risus vel odio.</p><p>Nam dui justo, pellentesque ut vestibulum nec, euismod at erat. Praesent id blandit libero. Suspendisse potenti. Quisque lobortis euismod ipsum, sed ultrices orci efficitur quis. Morbi interdum eu felis in pretium. Pellentesque et hendrerit urna, ac scelerisque magna. Duis eu maximus mauris. Nulla id arcu in diam hendrerit consectetur. Nunc accumsan ligula eget leo venenatis ultricies. Phasellus tortor mi, bibendum quis orci id, consequat tristique sapien.</p>",
+  "destaque": 1,
+  "ativo": 1,
+  "created_at": "2023-11-06T17:18:40.000000Z",
+  "updated_at": "2023-11-08T19:44:23.000000Z",
+  "categoria_nome": "Princípio de incêndio",
+  "subcategoria_nome": "teste",
+  "conteudo_treinamento": [
+    {
+      "tipo": "video",
+      "titulo": "Titulo do vídeo",
+      "descricao": "Descrição do vídeo",
+      "url": "https://sicredi.planteste.com.br/videos/Sicredi_PI_sequence_transparent_intro.mp4"
+    },
+    {
+      "tipo": "imagens",
+      "titulo": "",
+      "descricao": "",
+      "imagens": [
+        {
+          "id": 1,
+          "img_desk": "https://picsum.photos/600/300?random=1",
+          "img_mobile": "https://picsum.photos/400/400?random=1",
+          "alt_imagem": "Alt da imagem"
+        },
+        {
+          "id": 1,
+          "img_desk": "https://picsum.photos/600/300?random=2",
+          "img_mobile": "https://picsum.photos/400/400?random=2",
+          "alt_imagem": "Alt da imagem"
+        },
+        {
+          "id": 1,
+          "img_desk": "https://picsum.photos/600/300?random=3",
+          "img_mobile": "https://picsum.photos/400/400?random=3",
+          "alt_imagem": "Alt da imagem"
+        },
+        {
+          "id": 1,
+          "img_desk": "https://picsum.photos/600/300?random=4",
+          "img_mobile": "https://picsum.photos/400/400?random=4",
+          "alt_imagem": "Alt da imagem"
+        }
+      ]
+    }
+  ]
+}

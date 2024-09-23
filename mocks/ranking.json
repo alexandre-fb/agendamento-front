@@ -1,0 +1,104 @@
+{
+  "ranking_usuario": {
+    "posicao_usuario": 10,
+    "id": 55,
+    "primeiro_nome": "John Conner",
+    "unidade_nome": "Unit 1",
+    "setor_nome": "Sector 1",
+    "pontos": 100,
+    "nota": 4.5,
+    "foto": "https://randomuser.me/api/portraits/women/11.jpg"
+  },
+  "ranking_top_10": [
+    {
+      "id": 1,
+      "primeiro_nome": "John Conner",
+      "unidade_nome": "Unit 1",
+      "setor_nome": "Sector 1",
+      "pontos": 100,
+      "nota": 4.5,
+      "foto": "https://randomuser.me/api/portraits/men/1.jpg"
+    },
+    {
+      "id": 2,
+      "primeiro_nome": "Alice Maravilha",
+      "unidade_nome": "Unit 2",
+      "setor_nome": "Sector 2",
+      "pontos": 150,
+      "nota": 4.8,
+      "foto": "https://randomuser.me/api/portraits/women/2.jpg"
+    },
+    {
+      "id": 3,
+      "primeiro_nome": "Bob Esponja",
+      "unidade_nome": "Unit 3",
+      "setor_nome": "Sector 3",
+      "pontos": 200,
+      "nota": 4.9,
+      "foto": "https://randomuser.me/api/portraits/men/3.jpg"
+    },
+    {
+      "id": 4,
+      "primeiro_nome": "Marcos Correira",
+      "unidade_nome": "Unit 6",
+      "setor_nome": "Sector 9",
+      "pontos": 250,
+      "nota": 5.8,
+      "foto": "https://randomuser.me/api/portraits/men/4.jpg"
+    },
+    {
+      "id": 5,
+      "primeiro_nome": "Nome Silva",
+      "unidade_nome": "Unit 3",
+      "setor_nome": "Sector 4",
+      "pontos": 100,
+      "nota": 3.9,
+      "foto": "https://randomuser.me/api/portraits/men/5.jpg"
+    },
+    {
+      "id": 6,
+      "primeiro_nome": "Carlos Oliveira",
+      "unidade_nome": "Unit 5",
+      "setor_nome": "Sector 7",
+      "pontos": 180,
+      "nota": 4.2,
+      "foto": "https://randomuser.me/api/portraits/men/6.jpg"
+    },
+    {
+      "id": 7,
+      "primeiro_nome": "Fernanda Lima",
+      "unidade_nome": "Unit 2",
+      "setor_nome": "Sector 3",
+      "pontos": 210,
+      "nota": 4.6,
+      "foto": "https://randomuser.me/api/portraits/women/7.jpg"
+    },
+    {
+      "id": 8,
+      "primeiro_nome": "Lucas Silva",
+      "unidade_nome": "Unit 4",
+      "setor_nome": "Sector 6",
+      "pontos": 170,
+      "nota": 4.3,
+      "foto": "https://randomuser.me/api/portraits/men/8.jpg"
+    },
+    {
+      "id": 9,
+      "primeiro_nome": "Juliana Souza",
+      "unidade_nome": "Unit 1",
+      "setor_nome": "Sector 2",
+      "pontos": 190,
+      "nota": 4.7,
+      "foto": "https://randomuser.me/api/portraits/women/9.jpg"
+    },
+    {
+      "id": 10,
+      "primeiro_nome": "Roberto Mendes",
+      "unidade_nome": "Unit 7",
+      "setor_nome": "Sector 5",
+      "pontos": 230,
+      "nota": 5.0,
+      "foto": "https://randomuser.me/api/portraits/men/10.jpg"
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "imagem_banner": "https://amcor.planteste.com.br/storage/cenarios/J3sJoeJsxIIXdg3pT6pNao7RTxTsYHcPmcqYamBj.png",
+  "imagem_banner_mobile": "https://amcor.planteste.com.br/storage/cenarios/J3sJoeJsxIIXdg3pT6pNao7RTxTsYHcPmcqYamBj.png",
+  "alt_imagem_banner": "Alt da imagem",
+  "titulo_pagina": "Seus certificados",
+  "certificados": [
+    {
+      "icon_certificado": "https://randomuser.me/api/portraits/women/8.jpg",
+      "maestria_certificado": "Completou 6 treinamentos na plataforma Plan.",
+      "conquista": "30% dos usuários tem esse certificado",
+      "data": "3/03/2024",
+      "img": "https://randomuser.me/api/portraits/women/8.jpg",
+      "alt_img": "imagem do perfil",
+      "nome": "Nome da pessoa A"
+    },
+    {
+      "icon_certificado": "https://randomuser.me/api/portraits/women/8.jpg",
+      "maestria_certificado": "Completou 2 treinamentos na plataforma Plan.",
+      "conquista": "50% dos usuários tem esse certificado",
+      "data": "20/03/2024",
+      "img": "https://randomuser.me/api/portraits/women/11.jpg",
+      "alt_img": "imagem do perfil",
+      "nome": "Nome da pessoa B"
+    },
+    {
+      "icon_certificado": "https://randomuser.me/api/portraits/women/8.jpg",
+      "maestria_certificado": "Completou 5 treinamentos na plataforma Plan.",
+      "conquista": "90% dos usuários tem esse certificado",
+      "data": "13/03/2024",
+      "img": "https://randomuser.me/api/portraits/women/1.jpg",
+      "alt_img": "imagem do perfil",
+      "nome": "Nome da pessoa"
+    },
+    {
+      "icon_certificado": "https://randomuser.me/api/portraits/women/8.jpg",
+      "maestria_certificado": "Completou 5 treinamentos na plataforma Plan.",
+      "conquista": "90% dos usuários tem esse certificado",
+      "data": "13/03/2024",
+      "img": "https://randomuser.me/api/portraits/women/1.jpg",
+      "alt_img": "imagem do perfil",
+      "nome": "Nome da pessoa"
+    },
+    {
+      "icon_certificado": "https://randomuser.me/api/portraits/women/8.jpg",
+      "maestria_certificado": "Completou 5 treinamentos na plataforma Plan.",
+      "conquista": "90% dos usuários tem esse certificado",
+      "data": "13/03/2024",
+      "img": "https://randomuser.me/api/portraits/women/1.jpg",
+      "alt_img": "imagem do perfil",
+      "nome": "Nome da pessoa"
+    },
+    {
+      "icon_certificado": "https://randomuser.me/api/portraits/women/8.jpg",
+      "maestria_certificado": "Completou 5 treinamentos na plataforma Plan.",
+      "conquista": "90% dos usuários tem esse certificado",
+      "data": "13/03/2024",
+      "img": "https://randomuser.me/api/portraits/women/1.jpg",
+      "alt_img": "imagem do perfil",
+      "nome": "Nome da pessoa"
+    },
+    {
+      "icon_certificado": "https://randomuser.me/api/portraits/women/8.jpg",
+      "maestria_certificado": "Completou 5 treinamentos na plataforma Plan.",
+      "conquista": "90% dos usuários tem esse certificado",
+      "data": "13/03/2024",
+      "img": "https://randomuser.me/api/portraits/women/1.jpg",
+      "alt_img": "imagem do perfil",
+      "nome": "Nome da pessoa"
+    },
+    {
+      "icon_certificado": "https://randomuser.me/api/portraits/women/8.jpg",
+      "maestria_certificado": "Completou 5 treinamentos na plataforma Plan.",
+      "conquista": "90% dos usuários tem esse certificado",
+      "data": "13/03/2024",
+      "img": "https://randomuser.me/api/portraits/women/1.jpg",
+      "alt_img": "imagem do perfil",
+      "nome": "Nome da pessoa"
+    },
+    {
+      "icon_certificado": "https://randomuser.me/api/portraits/women/8.jpg",
+      "maestria_certificado": "Completou 5 treinamentos na plataforma Plan.",
+      "conquista": "90% dos usuários tem esse certificado",
+      "data": "13/03/2024",
+      "img": "https://randomuser.me/api/portraits/women/1.jpg",
+      "alt_img": "imagem do perfil",
+      "nome": "Nome da pessoa"
+    },
+    {
+      "icon_certificado": "https://randomuser.me/api/portraits/women/8.jpg",
+      "maestria_certificado": "Completou 5 treinamentos na plataforma Plan.",
+      "conquista": "90% dos usuários tem esse certificado",
+      "data": "13/03/2024",
+      "img": "https://randomuser.me/api/portraits/women/1.jpg",
+      "alt_img": "imagem do perfil",
+      "nome": "Nome da pessoa"
+    },
+    {
+      "icon_certificado": "https://randomuser.me/api/portraits/women/8.jpg",
+      "maestria_certificado": "Completou 5 treinamentos na plataforma Plan.",
+      "conquista": "90% dos usuários tem esse certificado",
+      "data": "13/03/2024",
+      "img": "https://randomuser.me/api/portraits/women/1.jpg",
+      "alt_img": "imagem do perfil",
+      "nome": "Nome da pessoa"
+    },
+    {
+      "icon_certificado": "https://randomuser.me/api/portraits/women/8.jpg",
+      "maestria_certificado": "Completou 5 treinamentos na plataforma Plan.",
+      "conquista": "90% dos usuários tem esse certificado",
+      "data": "13/03/2024",
+      "img": "https://randomuser.me/api/portraits/women/1.jpg",
+      "alt_img": "imagem do perfil",
+      "nome": "Nome da pessoa"
+    },
+    {
+      "icon_certificado": "https://randomuser.me/api/portraits/women/8.jpg",
+      "maestria_certificado": "Completou 5 treinamentos na plataforma Plan.",
+      "conquista": "90% dos usuários tem esse certificado",
+      "data": "13/03/2024",
+      "img": "https://randomuser.me/api/portraits/women/1.jpg",
+      "alt_img": "imagem do perfil",
+      "nome": "Nome da pessoa"
+    },
+    {
+      "icon_certificado": "https://randomuser.me/api/portraits/women/8.jpg",
+      "maestria_certificado": "Completou 5 treinamentos na plataforma Plan.",
+      "conquista": "90% dos usuários tem esse certificado",
+      "data": "13/03/2024",
+      "img": "https://randomuser.me/api/portraits/women/1.jpg",
+      "alt_img": "imagem do perfil",
+      "nome": "Nome da pessoa"
+    },
+    {
+      "icon_certificado": "https://randomuser.me/api/portraits/women/8.jpg",
+      "maestria_certificado": "Completou 5 treinamentos na plataforma Plan.",
+      "conquista": "90% dos usuários tem esse certificado",
+      "data": "13/03/2024",
+      "img": "https://randomuser.me/api/portraits/women/1.jpg",
+      "alt_img": "imagem do perfil",
+      "nome": "Nome da pessoa"
+    },
+    {
+      "icon_certificado": "https://randomuser.me/api/portraits/women/8.jpg",
+      "maestria_certificado": "Completou 5 treinamentos na plataforma Plan.",
+      "conquista": "90% dos usuários tem esse certificado",
+      "data": "13/03/2024",
+      "img": "https://randomuser.me/api/portraits/women/1.jpg",
+      "alt_img": "imagem do perfil",
+      "nome": "Nome da pessoa"
+    },
+    {
+      "icon_certificado": "https://randomuser.me/api/portraits/women/8.jpg",
+      "maestria_certificado": "Completou 5 treinamentos na plataforma Plan.",
+      "conquista": "90% dos usuários tem esse certificado",
+      "data": "13/03/2024",
+      "img": "https://randomuser.me/api/portraits/women/1.jpg",
+      "alt_img": "imagem do perfil",
+      "nome": "Nome da pessoa"
+    },
+    {
+      "icon_certificado": "https://randomuser.me/api/portraits/women/8.jpg",
+      "maestria_certificado": "Completou 5 treinamentos na plataforma Plan.",
+      "conquista": "90% dos usuários tem esse certificado",
+      "data": "13/03/2024",
+      "img": "https://randomuser.me/api/portraits/women/1.jpg",
+      "alt_img": "imagem do perfil",
+      "nome": "Nome da pessoa"
+    },
+    {
+      "icon_certificado": "https://randomuser.me/api/portraits/women/8.jpg",
+      "maestria_certificado": "Completou 5 treinamentos na plataforma Plan.",
+      "conquista": "90% dos usuários tem esse certificado",
+      "data": "13/03/2024",
+      "img": "https://randomuser.me/api/portraits/women/1.jpg",
+      "alt_img": "imagem do perfil",
+      "nome": "Nome da pessoa"
+    },
+    {
+      "icon_certificado": "https://randomuser.me/api/portraits/women/8.jpg",
+      "maestria_certificado": "Completou 5 treinamentos na plataforma Plan.",
+      "conquista": "90% dos usuários tem esse certificado",
+      "data": "13/03/2024",
+      "img": "https://randomuser.me/api/portraits/women/1.jpg",
+      "alt_img": "imagem do perfil",
+      "nome": "Nome da pessoa"
+    }
+  ]
+}

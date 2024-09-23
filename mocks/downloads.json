@@ -1,0 +1,86 @@
+{
+  "titulo_pagina": "Downloads",
+  "imagem_banner": "https://amcor.planteste.com.br/storage/cenarios/J3sJoeJsxIIXdg3pT6pNao7RTxTsYHcPmcqYamBj.png",
+  "imagem_banner_mobile": "https://amcor.planteste.com.br/storage/cenarios/J3sJoeJsxIIXdg3pT6pNao7RTxTsYHcPmcqYamBj.png",
+  "alt_imagem_banner": "Alt da imagem",
+  "downloads": [
+    {
+      "id": 4,
+      "categoria_id": "1",
+      "categoria_nome": "Princípio de incêndio",
+      "subcategoria_id": "1",
+      "subcategoria_nome": "Manutenção preventiva",
+      "titulo": "Titulo do download",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor nisl augue, in accumsan ex tincidunt sit amet. In ultricies turpis nec nibh aliquam.",
+      "tipo_arquivo": "PDF",
+      "link_arquivo": "https://jucisrs.rs.gov.br/upload/arquivos/201710/30150625-criacao-de-pdf-a.pdf",
+      "created_at": "2023-11-06T17:18:40.000000Z",
+      "updated_at": "2023-11-08T19:44:23.000000Z"
+    },
+    {
+      "id": 5,
+      "categoria_id": "2",
+      "categoria_nome": "Segurança do Trabalho",
+      "subcategoria_id": "2",
+      "subcategoria_nome": "Equipamentos de Proteção",
+      "titulo": "Guia de EPI",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor nisl augue, in accumsan ex tincidunt sit amet. In ultricies turpis nec nibh aliquam.",
+      "tipo_arquivo": "jpg",
+      "link_arquivo": "https://fotoinfoco.com.br/wp-content/uploads/2021/01/foto-retrato.jpg",
+      "created_at": "2023-11-07T14:20:30.000000Z",
+      "updated_at": "2023-11-09T16:42:15.000000Z"
+    },
+    {
+      "id": 6,
+      "categoria_id": "3",
+      "categoria_nome": "Primeiros Socorros",
+      "subcategoria_id": "3",
+      "subcategoria_nome": "Técnicas de RCP",
+      "titulo": "EXCEL",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor nisl augue, in accumsan ex tincidunt sit amet. In ultricies turpis nec nibh aliquam.",
+      "tipo_arquivo": "XLS",
+      "link_arquivo": "https://dicasdoexcel.com.br/wp-content/uploads/2019/11/Orçamento-de-18-períodos.xlsx",
+      "created_at": "2023-11-08T09:35:20.000000Z",
+      "updated_at": "2023-11-10T12:50:45.000000Z"
+    },
+    {
+      "id": 7,
+      "categoria_id": "1",
+      "categoria_nome": "Princípio de incêndio",
+      "subcategoria_id": "2",
+      "subcategoria_nome": "Procedimentos de Emergência",
+      "titulo": "Plano de Evacuação",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor nisl augue, in accumsan ex tincidunt sit amet. In ultricies turpis nec nibh aliquam.",
+      "tipo_arquivo": "PDF",
+      "link_arquivo": "plano-de-evacuacao.pdf",
+      "created_at": "2023-11-09T11:15:10.000000Z",
+      "updated_at": "2023-11-11T13:25:30.000000Z"
+    },
+    {
+      "id": 8,
+      "categoria_id": "4",
+      "categoria_nome": "Saúde Ocupacional",
+      "subcategoria_id": "1",
+      "subcategoria_nome": "Ergonomia",
+      "titulo": "Guia de Ergonomia",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor nisl augue, in accumsan ex tincidunt sit amet. In ultricies turpis nec nibh aliquam.",
+      "tipo_arquivo": "PDF",
+      "link_arquivo": "guia-de-ergonomia.pdf",
+      "created_at": "2023-11-10T08:05:50.000000Z",
+      "updated_at": "2023-11-12T10:15:20.000000Z"
+    },
+    {
+      "id": 9,
+      "categoria_id": "5",
+      "categoria_nome": "Treinamentos",
+      "subcategoria_id": "3",
+      "subcategoria_nome": "Treinamentos Anuais",
+      "titulo": "Calendário de Treinamentos",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor nisl augue, in accumsan ex tincidunt sit amet. In ultricies turpis nec nibh aliquam.",
+      "tipo_arquivo": "XLS",
+      "link_arquivo": "calendario-de-treinamentos.xls",
+      "created_at": "2023-11-11T07:45:30.000000Z",
+      "updated_at": "2023-11-13T09:55:00.000000Z"
+    }
+  ]
+}

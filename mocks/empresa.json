@@ -1,0 +1,13 @@
+{
+  "message": "Sobre listado com sucesso.",
+  "item": {
+    "id": 1,
+    "titulo_pagina": "Sobre a empresa",
+    "imagem_banner": "https://amcor.planteste.com.br/storage/cenarios/J3sJoeJsxIIXdg3pT6pNao7RTxTsYHcPmcqYamBj.png",
+    "imagem_banner_mobile": "https://amcor.planteste.com.br/storage/cenarios/J3sJoeJsxIIXdg3pT6pNao7RTxTsYHcPmcqYamBj.png",
+    "alt_imagem_banner": "Alt da imagem",
+    "texto": "<div>Pensando em melhorar nosso conhecimento em saúde, segurança e meio ambiente este game foi desenvolvido.</div><div>A ideia é aprimorar o nível de conhecimento bem como estimular uma competição saudável entre colegas de trabalho e unidades.</div><div>Desfrute do jogo e convide seus colegas de trabalho a também participarem.</div><div><br></div><div><strong>Conheça abaixo as regras:</strong></div><div>Medalha ouro: 100% de acertos</div><div>Medalha prata: 75% de acertos</div><div>Medalha bronze: 50% de acertos<br><br></div><div><strong>Critério de desempate: <br></strong>1º Pontuações<br>2º Medalhas<br>3º Tempo de resposta</div>",
+    "created_at": "2023-11-10T16:30:19.000000Z",
+    "updated_at": "2023-11-28T16:44:26.000000Z"
+  }
+}

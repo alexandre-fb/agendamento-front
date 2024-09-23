@@ -1,0 +1,21 @@
+{
+  "message": "Login efetuado com sucesso.",
+  "token": "T29jmSU9TFUiFZLzhJR8Ecb7FMKYZ5udX0suZktccxXG4ISqZUzBsgjT3y37MzZyNZtKrGUmseOxH0Gps9aQG64PhdPSUVBBD6aI7Z5gvGl5kYuY3XmmzzCW3gK3mpOgLr0ppSSH8sfMK9hX9q9QpqEHQlbhc3qe",
+  "usuario": {
+    "id": 9,
+    "primeiro_nome": "Alexandre",
+    "ultimo_nome": "Bisognin",
+    "unidade_id": 1,
+    "unidade_nome": "Patos de Minas",
+    "setor_id": 1,
+    "setor_nome": "Turno A",
+    "matricula": "1234-55",
+    "foto": "https://randomuser.me/api/portraits/men/3.jpg",
+    "treinamentos_realizados": 855,
+    "posicao_ranking": 231,
+    "notificacoes_nao_lidas": 5,
+    "treinamentos_disponiveis": 52,
+    "nota_media": 266
+  },
+  "video_intro": "https://sicredi.planteste.com.br/videos/Sicredi_PI_sequence_transparent_intro.mp4"
+}

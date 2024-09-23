@@ -1,0 +1,25 @@
+{
+  "message": "Treinamentos listados com sucesso.",
+  "treinamentos": [
+    {
+      "id": 4,
+      "imagem_destaque": "https://amcor.planteste.com.br/storage/cenarios/J3sJoeJsxIIXdg3pT6pNao7RTxTsYHcPmcqYamBj.png",
+      "imagem": "https://amcor.planteste.com.br/storage/cenarios/J3sJoeJsxIIXdg3pT6pNao7RTxTsYHcPmcqYamBj.png",
+      "imagem_alt": null,
+      "categoria_id": "1",
+      "categoria_nome": "Princípio de incêndio",
+      "subcategoria_id": "1",
+      "subcategoria_nome": "Manutenção preventiva",
+      "titulo": "1. Ao se deparar com um princípio de incêndio",
+      "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dicta...",
+      "destaque": 1,
+      "exibir_home": 1,
+      "ativo": 1,
+      "created_at": "2023-11-06T17:18:40.000000Z",
+      "updated_at": "2023-11-08T19:44:23.000000Z",
+      "concluido": 1,
+      "data_conclusao": "25/12/2024",
+      "slug": "ao-se-deparar-com-um-principio-de-incendio"
+    }
+  ]
+}
