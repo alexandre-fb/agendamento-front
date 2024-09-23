@@ -2,6 +2,11 @@
   <div
     class="w-full min-h-screen flex flex-col justify-center items-center gap-4"
   >
+    <el-button
+      type="primary"
+      @click="logout"
+      class="fixed bottom-4 right-4"
+    >Sair</el-button>
     <section class="flex justify-end w-full max-w-6xl px-4">
       <el-button type="success" @click="handleAddClick"> Adicionar </el-button>
     </section>
@@ -37,7 +42,7 @@
         />
         <el-table-column
           label="Nome do Animal"
-          prop="animalName"
+          prop="animal_name"
           align="center"
           min-width="110"
         />
@@ -87,6 +92,17 @@
       style="max-width: 500px"
     >
       <el-form :model="form">
+        <el-form-item label="Dr." :label-width="formLabelWidth">
+          <el-select v-model="form.doctorId" placeholder="Selecione o Dr.">
+            <el-option
+              v-for="doctor in doctorList"
+              :key="doctor.id"
+              :label="doctor.name"
+              :value="doctor.id"
+            />
+          </el-select>
+        </el-form-item>
+
         <el-form-item label="Nome" :label-width="formLabelWidth">
           <el-input v-model="form.name" autocomplete />
         </el-form-item>
@@ -110,6 +126,7 @@
         <el-form-item label="Data" :label-width="formLabelWidth">
           <el-date-picker
             format="DD/MM/YYYY"
+            value-format="YYYY-MM-DD"
             v-model="form.date"
             type="date"
             placeholder="Selecione a data"
@@ -117,10 +134,19 @@
         </el-form-item>
 
         <el-form-item label="Período" :label-width="formLabelWidth">
-          <el-select v-model="form.region" placeholder="Selecione o turno">
-            <el-option label="Manhã" value="manha" />
+          <el-select v-model="form.period" placeholder="Selecione o turno">
+            <el-option label="Manhã" value="manhã" />
             <el-option label="Tarde" value="tarde" />
           </el-select>
+        </el-form-item>
+
+        <el-form-item label="Sintomas" :label-width="formLabelWidth">
+          <el-input
+            v-model="form.symptoms"
+            :autosize="{ minRows: 2, maxRows: 4 }"
+            type="textarea"
+            placeholder="Descreva os sintomas"
+          />
         </el-form-item>
       </el-form>
       <template #footer>
@@ -177,10 +203,12 @@
 <script setup>
 import { useUserStore } from "../stores/UserStore";
 import { View, Delete, Edit } from "@element-plus/icons-vue"; //icons
-
+import { useRouter } from "vue-router";
 definePageMeta({
   layout: "auth",
 });
+
+const router = useRouter();
 
 const userStore = useUserStore();
 const token = "Bearer " + userStore.token;
@@ -188,6 +216,14 @@ const config = useRuntimeConfig();
 const { baseApiUrl } = config.public;
 
 const loadingTable = ref(false);
+const tableData = ref([]);
+
+const loadingDoctorList = ref(false);
+const doctorList = ref([]);
+
+const loadingAddRegistro = ref(false);
+const loadingEditRegistro = ref(false);
+const loadingDeleteRegistro = ref(false);
 
 // modal details
 const dialogDetailsVisible = ref(false);
@@ -204,29 +240,37 @@ const form = reactive({
   animalType: "",
   animalAge: 0,
   date: "",
+  doctorId: null,
+  symptoms: "",
 });
 
 //table
 const search = ref("");
 const filterTableData = computed(() =>
-  tableData.filter(
+  tableData.value?.filter(
     (data) =>
       !search.value ||
-      data.name.toLowerCase().includes(search.value.toLowerCase())
+      data.name.toLowerCase().includes(search.value.toLowerCase()) ||
+      data.animal_name.toLowerCase().includes(search.value.toLowerCase()) 
   )
 );
 
 onMounted(() => {
+  getDoctorList();
   getTableData();
 });
 
 const resetForm = () => {
+  form.doctorId = null;
   form.name = "";
   form.email = "";
   form.animalName = "";
   form.animalType = "";
   form.animalAge = 0;
   form.date = "";
+  form.symptoms = "";
+  form.period = "";
+  form.id = null;
 };
 
 const handleConfirmAddOrEdit = () => {
@@ -237,14 +281,92 @@ const handleConfirmAddOrEdit = () => {
   }
 };
 
-const confirmAddRegistro = () => {
+const confirmAddRegistro = async () => {
   dialogFormVisible.value = false;
-  console.log("add");
+
+  try {
+    loadingAddRegistro.value = true;
+
+    const apiUrl = `${baseApiUrl}/scheduling/create`;
+
+    const body = {
+      doctor_id: form.doctorId,
+      name: form.name,
+      email: form.email,
+      animal_name: form.animalName,
+      animal_type: form.animalType,
+      age: form.animalAge,
+      symptoms: form.symptoms,
+      date: form.date,
+      period: form.period,
+    };
+
+    console.log("body", body);
+    const response = await $fetch(apiUrl, {
+      method: "POST",
+      headers: {
+        Authorization: token,
+      },
+      body: body,
+    });
+
+    ElMessage({
+      showClose: true,
+      message: "Registro adicionado com sucesso",
+      type: "success",
+    });
+
+    getTableData();
+
+  } catch (error) {
+    console.log("error fetchTableData", error);
+  } finally {
+    loadingAddRegistro.value = false;
+  }
 };
 
-const confirmEditRegistro = () => {
-  dialogFormVisible.value = false;
-  console.log("edit");
+const confirmEditRegistro = async () => {
+  try {
+    loadingEditRegistro.value = true;
+    const apiUrl = `${baseApiUrl}/scheduling/update/${form.id}`;
+
+    const body = {
+      doctor_id: form.doctorId,
+      id: form.id,
+      name: form.name,
+      email: form.email,
+      animal_name: form.animalName,
+      animal_type: form.animalType,
+      age: form.animalAge,
+      symptoms: form.symptoms,
+      date: form.date,
+      period: form.period,
+    };
+
+    const response = await $fetch(apiUrl, {
+      method: "PUT",
+      headers: {
+        Authorization: token,
+      },
+      body: body,
+    });
+
+    console.log('response edit', response);
+
+    ElMessage({
+      showClose: true,
+      message: "Registro editado com sucesso",
+      type: "success",
+    });
+
+    getTableData();
+
+  } catch (error) {
+    console.log("error fetchTableData", error);
+  } finally {
+    loadingEditRegistro.value = false;
+    dialogFormVisible.value = false;
+  }
 };
 
 const handleAddClick = () => {
@@ -259,16 +381,44 @@ const handleEditClick = (index, row) => {
   resetForm();
   form.name = row.name;
   form.email = row.email;
-  form.animalName = row.animalName;
-  form.animalType = row.animalType;
-  form.animalAge = row.animalAge;
+  form.animalName = row.animal_name;
+  form.animalType = row.animal_type;
+  form.animalAge = row.age;
   form.date = row.date;
+  form.symptoms = row.symptoms;
+  form.period = row.period;
+  form.id = row.id;
+  form.doctorId = row.doctor[0].id;
 
   dialogFormVisible.value = true;
 };
 
-const handleDeleteClick = (index, row) => {
+const handleDeleteClick = async (index, row) => {
   console.log(index, row);
+  try {
+    loadingDeleteRegistro.value = true;
+    const apiUrl = `${baseApiUrl}/scheduling/delete/${row.id}`;
+
+    const response = await $fetch(apiUrl, {
+      method: "DELETE",
+      headers: {
+        Authorization: token,
+      },
+    });
+
+    console.log('response edit', response);
+    ElMessage({
+      showClose: true,
+      message: "Registro removido com sucesso",
+      type: "success",
+    });
+    getTableData();
+
+  } catch (error) {
+    console.log("error delete", error);
+  } finally {
+    loadingDeleteRegistro.value = false;
+  }
 };
 
 const handleShowDetails = (index, row) => {
@@ -286,16 +436,39 @@ const formatDate = (date) => {
 const getTableData = async () => {
   try {
     loadingTable.value = true;
-    console.log("loadingTable", loadingTable.value);
-    const apiUrl = `${baseApiUrl}/pagina`;
-    // const response = await $fetch(apiUrl, {
-    //   method: "GET",
-    //   headers: {
-    //     Authorization: token,
-    //   },
-    // });
+    const apiUrl = `${baseApiUrl}/scheduling/list`;
+    const response = await $fetch(apiUrl, {
+      method: "GET",
+      headers: {
+        Authorization: token,
+      },
+    });
+
+    console.log("response list", response[0]);
+    tableData.value = response[0];
   } catch (error) {
     console.log("error fetchTableData", error);
+  } finally {
+      loadingTable.value = false;
+  }
+};
+
+const getDoctorList = async () => {
+  try {
+    loadingDoctorList.value = true;
+
+    const apiUrl = `${baseApiUrl}/doctor/list`;
+    const response = await $fetch(apiUrl, {
+      method: "GET",
+      headers: {
+        Authorization: token,
+      },
+    });
+
+    doctorList.value = response[0];
+    console.log("response doctor list", doctorList.value);
+  } catch (error) {
+    console.log("error fetchDoctorList", error);
   } finally {
     setTimeout(() => {
       loadingTable.value = false;
@@ -305,127 +478,8 @@ const getTableData = async () => {
   }
 };
 
-const tableData = [
-  {
-    date: "2016-05-03",
-    name: "Tom Johnson",
-    email: "tom@tom.com",
-    animalName: "Rex",
-    animalType: "Cachorro",
-    animalAge: 2,
-    period: "manha",
-    symptoms:
-      "Rex está apresentando tosse frequente e espirros constantes, especialmente durante a manhã. Além disso, ele parece estar mais letárgico do que o normal e perdeu um pouco do apetite.",
-  },
-  {
-    date: "2017-06-15",
-    name: "Jerry Smith",
-    email: "jerry@jerry.com",
-    animalName: "Whiskers",
-    animalType: "Gato",
-    animalAge: 3,
-    period: "tarde",
-    symptoms:
-      "Whiskers não está comendo como de costume e parece estar perdendo peso. Ele também está se escondendo mais do que o normal e parece estar menos ativo.",
-  },
-  {
-    date: "2018-07-20",
-    name: "Spike Lee",
-    email: "spike@spike.com",
-    animalName: "Buddy",
-    animalType: "Cachorro",
-    idadeAnimal: 4,
-    period: "noite",
-    symptoms:
-      "Buddy está se coçando intensamente e perdeu alguns pelos na área afetada. Ele também está lambendo a área constantemente, o que está causando irritação na pele.",
-  },
-  {
-    date: "2019-08-25",
-    name: "Tyke Brown",
-    email: "tyke@tyke.com",
-    animalName: "Mittens",
-    animalType: "Gato",
-    idadeAnimal: 1,
-    period: "manha",
-    symptoms:
-      "Mittens vomitou várias vezes nos últimos dias e parece estar desidratado. Ele também está evitando a comida e a água, o que é incomum para ele.",
-  },
-  {
-    date: "2020-09-30",
-    name: "Butch Davis",
-    email: "butch@butch.com",
-    animalName: "Shadow",
-    animalType: "Cachorro",
-    idadeAnimal: 5,
-    period: "tarde",
-    symptoms:
-      "Shadow está com diarreia há alguns dias e parece estar perdendo peso. Ele também está menos ativo e parece estar desconfortável, especialmente após comer.",
-  },
-  {
-    date: "2021-10-05",
-    name: "Nibbles Wilson",
-    email: "nibbles@nibbles.com",
-    animalName: "Snowball",
-    animalType: "Coelho",
-    idadeAnimal: 2,
-    period: "noite",
-    symptoms:
-      "Snowball está letárgico e não está comendo como de costume. Ele também está respirando de forma pesada e parece estar desconfortável, especialmente quando se move.",
-  },
-  {
-    date: "2022-11-10",
-    name: "Tuffy Martinez",
-    email: "tuffy@tuffy.com",
-    animalName: "Goldie",
-    animalType: "Peixe",
-    idadeAnimal: 1,
-    period: "manha",
-    symptoms:
-      "Goldie está nadando de lado e parece estar tendo dificuldade para se manter equilibrado. Ele também está menos ativo e não está comendo como de costume.",
-  },
-  {
-    date: "2023-12-15",
-    name: "Lightning Garcia",
-    email: "lightning@lightning.com",
-    animalName: "Flash",
-    animalType: "Cavalo",
-    idadeAnimal: 6,
-    period: "tarde",
-    symptoms:
-      "Flash está mancando e parece estar com dor na perna direita. Ele também está menos disposto a se mover e parece estar desconfortável, especialmente ao caminhar.",
-  },
-  {
-    date: "2024-01-20",
-    name: "Quacker Hernandez",
-    email: "quacker@quacker.com",
-    animalName: "Daffy",
-    animalType: "Pato",
-    animalAge: 3,
-    period: "noite",
-    symptoms:
-      "Daffy está com as penas eriçadas e parece estar com dificuldade para voar. Ele também está menos ativo e não está comendo como de costume, o que é preocupante.",
-  },
-  {
-    date: "2025-02-25",
-    name: "Muscles Robinson",
-    email: "muscles@muscles.com",
-    animalName: "Bruno",
-    animalType: "Cachorro",
-    animalAge: 4,
-    period: "manha",
-    symptoms:
-      "Bruno está tossindo frequentemente e parece estar com dificuldade para respirar. Ele também está menos ativo e não está comendo como de costume, o que é preocupante.",
-  },
-  {
-    date: "2026-03-30",
-    name: "Toodles Clark",
-    email: "toodles@toodles.com",
-    animalName: "Bella",
-    animalType: "Gato",
-    animalAge: 2,
-    period: "tarde",
-    symptoms:
-      "Bella está espirrando frequentemente e parece estar com dificuldade para respirar. Ela também está menos ativa e não está comendo como de costume, o que é preocupante.",
-  },
-];
+const logout = () => {
+      userStore.clear();
+      router.push({ path: "/login" });
+    };
 </script>

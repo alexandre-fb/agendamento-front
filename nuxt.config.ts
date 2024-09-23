@@ -44,7 +44,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      baseApiUrl: 'http://localhost/criasol-backend/public/api',
+      baseApiUrl: 'http://criasol-backend.test/api',
     },
   },
 });
