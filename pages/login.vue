@@ -221,7 +221,7 @@ const setGlobalUserData = (response) => {
 
 const goHome = () => {
   // showModal.value = false;
-  router.push({ path: "/agendamento" });
+  router.push({ path: "/" });
 };
 </script>
 

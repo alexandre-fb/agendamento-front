@@ -56,5 +56,5 @@ table {
 }
 
 .el-loading-spinner svg .path {
-	stroke: #fff;
+	stroke: gray;
 }
